@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aliyar Holdings Ltd.</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI,sans-serif;
+}
+
+body{
+    background:
+    radial-gradient(circle at top,#1e293b,#0f172a 60%);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Биржа */
+
+.ticker{
+    background:#020617;
+    padding:12px;
+    overflow:hidden;
+    border-bottom:2px solid #fbbf24;
+}
+
+.ticker span{
+    display:inline-block;
+    white-space:nowrap;
+    animation:scroll 25s linear infinite;
+    color:#22c55e;
+    font-weight:bold;
+}
+
+@keyframes scroll{
+    from{transform:translateX(100%)}
+    to{transform:translateX(-100%)}
+}
+
+/* Логотип */
+
+.hero{
+    text-align:center;
+    padding:60px 20px;
+}
+
+.hero h1{
+    font-size:60px;
+    color:#fbbf24;
+    text-shadow:0 0 20px rgba(251,191,36,.5);
+}
+
+.hero p{
+    color:#94a3b8;
+}
+
+.small{
+    font-size:12px;
+    opacity:.6;
+    margin-top:10px;
+}
+
+/* Аварийный баннер */
+
+.alert{
+    width:90%;
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+    border-radius:15px;
+    background:#7f1d1d;
+    border:2px solid #ef4444;
+    text-align:center;
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%,100%{transform:scale(1);}
+    50%{transform:scale(1.02);}
+}
+
+/* Карточка */
+
+.card{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border-radius:25px;
+    padding:35px;
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#fbbf24;
+}
+
+.card p,
+.card li{
+    line-height:1.8;
+}
+
+.card ul{
+    margin-left:20px;
+    margin-top:10px;
+}
+
+/* Фото кота */
+
+.cfo{
+    text-align:center;
+    margin-top:40px;
+}
+
+.cfo img{
+    width:300px;
+    max-width:100%;
+    border-radius:20px;
+    border:4px solid #fbbf24;
+    transition:.3s;
+}
+
+.cfo img:hover{
+    transform:rotate(-2deg) scale(1.03);
+}
+
+.cfo p{
+    margin-top:15px;
+    color:#94a3b8;
+}
+
+/* Доска-кнопка */
+
+.board{
+    margin:40px auto;
+    width:320px;
+    background:#8b5a2b;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:24px;
+    font-weight:bold;
+    cursor:pointer;
+    border:4px solid #5c3a1e;
+    border-radius:10px;
+    position:relative;
+    transition:.2s;
+    box-shadow:
+    0 10px 20px rgba(0,0,0,.5);
+}
+
+.board::before{
+    content:"🔩";
+    position:absolute;
+    left:10px;
+    top:5px;
+}
+
+.board::after{
+    content:"🔩";
+    position:absolute;
+    right:10px;
+    top:5px;
+}
+
+.board:hover{
+    transform:rotate(2deg);
+}
+
+/* Таблица */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:25px;
+}
+
+td,th{
+    border:1px solid rgba(255,255,255,.2);
+    padding:12px;
+}
+
+th{
+    background:rgba(251,191,36,.15);
+}
+
+/* Дождь денег */
+
+.money{
+    position:fixed;
+    top:-50px;
+    font-size:30px;
+    animation:fall linear forwards;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="ticker">
+<span>
+ALIYAR +0.01% |
+Кошелек -98.7% |
+Шансы на BMW +0.00001% |
+Финансовая стабильность: уточняется |
+Инвесторы: отсутствуют |
+</span>
+</div>
+
+<div class="hero">
+<h1>ALIYAR HOLDINGS LTD.</h1>
+<p>Global Financial Corporation</p>
+<div class="small">
+*Корпорация состоит из одного человека и одного кота
+</div>
+</div>
+
+<div class="alert">
+⚠ ВНИМАНИЕ ⚠<br>
+Компания достигла нового исторического минимума
+по количеству денег.
+</div>
+
+<div class="card">
+
+<h2>Официальное обращение к инвесторам</h2>
+
+<p>
+Уважаемый потенциальный инвестор.
+</p>
+
+<p>
+Совет директоров Aliyar Holdings Ltd. с сожалением сообщает,
+что финансовое положение компании остаётся стабильно тяжёлым.
+</p>
+
+<p>
+Независимый аудит подтвердил наличие следующих активов:
+</p>
+
+<ul>
+<li>1 генеральный директор</li>
+<li>1 финансовый директор (кот)</li>
+<li>37 сомов</li>
+<li>огромные амбиции</li>
+<li>отсутствие здравого смысла</li>
+</ul>
+
+<p>
+Обязательства компании:
+</p>
+
+<ul>
+<li>BMW</li>
+<li>богатая жизнь</li>
+<li>финансовая независимость</li>
+<li>желательно до пятницы</li>
+</ul>
+
+<table>
+<tr>
+<th>Показатель</th>
+<th>Значение</th>
+</tr>
+<tr>
+<td>Доходы</td>
+<td>Не найдены</td>
+</tr>
+<tr>
+<td>Расходы</td>
+<td>Обнаружены</td>
+</tr>
+<tr>
+<td>Прибыль</td>
+<td>В розыске</td>
+</tr>
+<tr>
+<td>Шанс разбогатеть</td>
+<td>Иншаллах</td>
+</tr>
+<tr>
+<td>Количество проблем</td>
+<td>Много</td>
+</tr>
+</table>
+
+<div class="cfo">
+<img src="cat.jpg">
+<p>
+Mr. Whiskers<br>
+Chief Financial Officer<br><br>
+Последний раз видел деньги в прошлом квартале.
+</p>
+</div>
+
+<div class="board" onclick="invest()">
+СПАСТИ КОМПАНИЮ
+</div>
+
+</div>
+
+<script>
+function invest(){
+
+for(let i=0;i<25;i++){
+
+let money=document.createElement("div");
+
+money.className="money";
+money.innerHTML="💸";
+
+money.style.left=Math.random()*100+"vw";
+money.style.animationDuration=
+(2+Math.random()*3)+"s";
+
+document.body.appendChild(money);
+
+setTimeout(()=>{
+money.remove();
+},5000);
+}
+
+setTimeout(()=>{
+alert(
+"Спасибо за инвестиции!\\n\\nВаш вклад будет направлен на:\\n\\n✓ стратегическую шаурму\\n✓ поддержание экономики компании\\n✓ покупку мечты\\n✓ борьбу с бедностью генерального директора"
+);
+},500);
+}
+</script>
+
+</body>
+</html>
